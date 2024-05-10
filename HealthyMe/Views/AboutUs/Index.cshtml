@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "AboutUs Page";
+}
+<div class="container pt-5 pb-5">
+    <div>
+        <h2>About Project</h2>
+        <p>
+            This comprehensive web application serves as a powerful tool for nutrition tracking. It boasts user
+            authentication, CRUD functionalities, and dynamic Chart.js visualizations. Users can seamlessly log in,
+            add,
+            edit, and delete foods, meals, and plans, with the macronutrient charts updating in real-time. The
+            polished
+            and user-friendly UI adapts intelligently based on the user's status, and local storage efficiently
+            manages
+            data storage. Its versatility makes it an ideal foundation for
+            health and nutrition-focused applications, offering a holistic approach to user engagement and data
+            management. <br>
+            Built on the ASP.NET Core framework, the website employs Entity Framework for data access, 
+            likely interfacing with a relational database to store user and nutritional data securely. 
+            A noteworthy aspect is the integration of user authentication and authorization, evident through the utilization of Identity for user management.
+            HealthyMe leverages the FoodCentral API to access a vast database of food-related information, enabling users to retrieve detailed nutritional data for a wide variety of food items. 
+            This integration enhances the app's capability to provide accurate and comprehensive insights into users' dietary choices.
+            <br> <b> Features</b> <br>
+            1.User Authentication:
+            User registration and login functionality.<br>
+            2.CRUD Operations:
+
+            Create, read, update, and delete operations for managing foods, meals.<br>
+            3.Nutrition Tracking:
+
+            Log and track daily food intake with details such as name, quantity, meal, and date.<br>
+            4.Dynamic Chart.js Visualizations:
+
+            Real-time visualizations of macronutrient intake for a comprehensive view of dietary habits using
+            Chartjs<br>
+
+
+        </p>
+    </div>
+
+
+    <div class="container p-3 about-links">
+        <p><b>API data-The FoodData Central API</b> - https://fdc.nal.usda.gov</p>
+        <p>
+            <b>Endpoints</b> - <br>
+            /food/{fdcId} GET Fetches details for one food item by FDC ID<br>
+            /foods GET | POST Fetches details for multiple food items using input FDC IDs<br>
+            /foods/list GET | POST Returns a paged list of foods, in the 'abridged' format<br>
+            /foods/search GET | POST Returns a list of foods that matched search (query) keywords<br>
+        </p>
+        <p> <b>Github </b> - https://github.com/saikumar7797/Asssignment5_DIS</p>
+
+    </div>
+
+    <div class='container p-3 '>
+        <h3>Data model:</h3>
+        <img class="imgabout" src="~/assets/ERD-diagram.png" alt="">
+    </div>
+
+   
+</div>
